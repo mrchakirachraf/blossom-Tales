@@ -51,6 +51,19 @@ h2{
 }
 
 
+.form-group > label{
+    font-size: 25px;
+}
+
+.form-group > input{
+    background-color: #D9D9D9;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 15px;
+    border: transparent;
+}
 
 
 
@@ -60,6 +73,25 @@ h2{
     #overlay > div{
         width: 60%;
     }
+
+    #overlay form > div{
+        width: 100%;
+    }
+    .form-group > label{
+        font-size: 20px;
+    }
+    #overlay > div:nth-child(2){
+        width: 50%;
+    }
+    
+
+    .form-group > input{
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+
     
     #logo{
         width: 50%;

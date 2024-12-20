@@ -30,7 +30,7 @@ const SignIn = () => {
                   <Link to="/anime-list">
                     <Button {...signInBtnProps}></Button>
                   </Link>
-                  <span>if you don't have an account click here</span>
+                  <span style={{textAlign : 'center'}} >if you don't have an account click here</span>
               </form>
               
           </div>
