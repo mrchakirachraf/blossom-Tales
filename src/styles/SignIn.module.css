@@ -1,4 +1,4 @@
-.blossom-tales-container {
+.blossom_tales_container {
     background-image: url(../assets/peakpx.jpg);
     width: 100vw;
     height: 100vh;
@@ -14,7 +14,6 @@
     align-items: center;
     color: black;
     gap: 50px;
-
 }
 
 #logo{
@@ -25,7 +24,9 @@
     width: 40%;
     background-color: white;
     border-radius: 70px;
-    padding: 50px;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -45,22 +46,23 @@
     font-weight: bold;
 }
 
-h2{
+#overlay h2{
     font-weight: Bold;
     text-align: center;
-}
-
-
-.form-group > label{
     font-size: 25px;
 }
 
-.form-group > input{
+
+.form_group > label{
+    font-size: 22px;
+}
+
+.form_group > input{
     background-color: #D9D9D9;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
     border: transparent;
 }
@@ -77,15 +79,15 @@ h2{
     #overlay form > div{
         width: 100%;
     }
-    .form-group > label{
+    .form_group > label{
         font-size: 20px;
     }
     #overlay > div:nth-child(2){
-        width: 50%;
+        width: 70%;
     }
     
 
-    .form-group > input{
+    .form_group > input{
         font-size: 15px;
         padding: 10px;
         border-radius: 15px;

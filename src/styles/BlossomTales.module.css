@@ -1,10 +1,13 @@
-.blossom-tales-container {
+.blossom_tales_container {
     background-image: url(../assets/peakpx.jpg);
     width: 100vw;
     height: 100vh;
 }
 #logo{
     width: 100%;
+}
+#logo img{
+    width: 80%;
 }
 
 .overlay{
@@ -18,7 +21,7 @@
 
 .overlay > div:nth-child(1){
     height: 100vh;
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -27,20 +30,20 @@
     padding: 100px;
 }
 .overlay > div:nth-child(2){
-    width: 50%;
+    width: 35%;
 }
 .subtitle{
-    font-size: 24px;
+    font-size: 22px;
     color: black;
 }
 
-.button-group{
+.button_group{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.btn-purple{
+.btn_purple{
     width: 200px;
 }
 
@@ -50,6 +53,9 @@
     #logo{
         display: flex;
         justify-content: center;
+    }
+    #logo img{
+        width: 100%;
     }
     .subtitle{
         font-size: 15px;
@@ -69,7 +75,7 @@
         height: 100vh;
         width: 80%;
         padding: 40px;
-        gap: 40px;
+        gap: 60px;
     }
     .overlay > div:nth-child(2){
         display: none;

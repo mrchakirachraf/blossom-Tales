@@ -1,4 +1,4 @@
-.search-bar{
+.search_bar{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -6,10 +6,10 @@
     border-radius: 50px;
     transition: 0.3s ease;
 }
-.search-bar:hover{
+.search_bar:hover{
     box-shadow: 1px 1px 1px 1px #A5759D;
 }
-.search-input {
+.search_input {
     width: 100%;
     background-color: #02010100; 
     border-radius: 50px;
@@ -20,21 +20,21 @@
     font-size: 24px;
     transition: border-color 0.3s ease;
 }
-.search-input::placeholder {
+.search_input::placeholder {
     font-size: 24px;
 }
-.search-input:focus {
+.search_input:focus {
     border-color: transparent; 
     outline: none; 
 }
 
-.search-button{
+.search_button{
     background-color: #02010100;
-    border-radius: 50px;
+    border-radius: 50%;
     border-color: 2px solid transparent;
     transition: 0.3s ease;
 }
-.search-button:hover{
+.search_button:hover{
     border-color: transparent; 
     outline: none; 
     box-shadow: 1px 1px 1px 1px #A5759D;
@@ -42,10 +42,10 @@
 /* Phone */
 @media (max-width: 1080px){
 
-    .search-input::placeholder {
+    .search_input::placeholder {
         font-size: 15px;
     }
-    .search-button > svg {
+    .search_button > svg {
         height: 30px;
         width: 30px;
     }

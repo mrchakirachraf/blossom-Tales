@@ -6,6 +6,7 @@ import Page1 from './routes/Page1';
 import BlossomTales from './routes/BlossomTales';
 import SignIn from './routes/SignIn';
 import "./App.css"
+import "./tailwind.css"
 
 const App = () => (
   <Router>
