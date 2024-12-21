@@ -5,6 +5,18 @@ import WithoutNavbar from './layouts/WithoutNavBar';
 import Page1 from './routes/Page1';
 import BlossomTales from './routes/BlossomTales';
 import SignIn from './routes/SignIn';
+import AnimeSearch from './routes/AnimeSearch';
+
+
+
+
+
+
+
+
+
+
+
 import "./App.css"
 import "./tailwind.css"
 
@@ -15,6 +27,7 @@ const App = () => (
       {/* Pages with Navbar */}
       <Route element={<WithNavbar />}>
         <Route path="/page1" element={<Page1 />} />
+        <Route path='/anime-search' element={<AnimeSearch />} ></Route>
         
       </Route>
       {/* Pages without Navbar */}
