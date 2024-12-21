@@ -1,0 +1,12 @@
+.currentSeason{
+    color: rgba(0, 0, 0,0.5);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* Phone */
+@media (max-width: 1024px){
+    .currentSeason{
+        font-size: 20px;
+    }
+}
