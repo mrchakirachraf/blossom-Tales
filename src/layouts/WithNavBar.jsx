@@ -6,9 +6,9 @@ import { Outlet } from 'react-router-dom';
 const WithNavbar = () => (
   <>
     <NavBar />
-    <main>
+    <div style={{position: "relative"}} >
       <Outlet />
-    </main>
+    </div>
     <Footer />
   </>
 );
