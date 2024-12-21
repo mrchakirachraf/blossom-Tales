@@ -1,0 +1,237 @@
+.sidebar .hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E7B3C0;
+  border: none;
+  color: white;
+  width: 50px; 
+  height: 40px; 
+  margin: 1rem 0; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Ajout d'une transition pour un effet fluide */
+  fill: white; /* Couleur par défaut */
+}
+
+.hamburger:hover {
+  fill: black; /* Couleur au survol */
+}
+
+.sidebar .hamburger:hover {
+  background-color: #fff;
+  color: #12171e;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  background-color: #E7B3C0;
+  padding: 1rem;
+  transition: all 0.5s ease;
+}
+.sidebar ul li a .tooltip {
+  display: none;
+  position: absolute;
+  left: 50px; 
+  background-color: white;
+  color: #E7B3C0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.sidebar ul li a:hover .tooltip {
+  display: block;
+}
+.sidebar {
+  width: 80px;
+}
+.sidebar.active {
+  width: 250px;
+}
+
+.sidebar .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #fff;
+  color: #12171e;
+}
+
+.sidebar .navItem {
+  display: none;
+  margin-left: 10px;
+}
+.sidebar.active .navItem {
+  display: block; 
+}
+.sidebar ul li a svg {
+  display: block; 
+}
+
+.sidebar.active ul li a svg {
+  display: block; 
+}
+
+.sidebar .tooltip {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #12171e;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar ul li:hover .tooltip {
+  opacity: 1;
+}
+
+.mobileNav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #E7B3C0;
+  z-index: 10;
+}
+
+.mobileMenu ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.mobileMenu ul li {
+  margin: 0.5rem 0;
+}
+
+.logo {
+  height: 40px;
+}
+
+.searchIcon,
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mobileNav {
+    display: flex;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .mobileNav {
+    display: none;
+  }
+
+  .sidebar {
+    display: block;
+  }
+}
+
+.topLine {
+  height: 3px;
+  width: 100%;
+  background-color: #E7B3C0;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  z-index: 20;
+}
+
+@media (min-width: 769px) {
+  .topLine {
+    display: none;
+  }
+}
+
+.mobileMenu ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.mobileMenu ul li {
+  margin: 0.5rem 0;
+}
+
+.mobileMenu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: block; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobileMenu ul li a:hover {
+  background-color: white;
+  color: #E7B3C0;
+}
+
