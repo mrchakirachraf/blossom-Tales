@@ -35,3 +35,43 @@
   border-color: #bce8f1;
   color: #31708f;
 }
+/* Styles pour la main-content */
+.main-content {
+  position: relative;
+  padding: 20px; /* Espacement interne */
+  min-height: calc(100vh - 60px); /* Ajuste avec le footer */
+  transition: margin-left 0.3s ease; /* Transition fluide */
+}
+
+/* Navbar verticale inactive */
+.sidebar {
+  width: 80px;
+  transition: width 0.3s ease;
+}
+
+/* Navbar verticale active */
+.sidebar.active {
+  width: 250px;
+}
+
+/* Gestion des écrans larges */
+@media (min-width: 768px) {
+  .main-content {
+    margin-left: 80px; /* Espace pour la navbar inactive */
+  }
+}
+
+/* Navbar active sur grand écran */
+@media (min-width: 768px) {
+  .main-content[data-sidebar="open"] {
+    margin-left: 250px; /* Espace pour la navbar active */
+  }
+}
+
+/* Gestion des écrans petits */
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 60px; /* Espace pour la navbar horizontale */
+  }
+}
+

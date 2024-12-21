@@ -3,9 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer
-      className="bg-[#E7B3C0] text-center text-white py-6 fixed bottom-0 left-0 w-full z-50"
-    >
+    <footer className="bg-[#E7B3C0] text-center text-white py-6 w-full">
       {/* Texte "Follow us" */}
       <p className="font-semibold mb-4">Follow us</p>
 
