@@ -20,6 +20,7 @@ import AnimeDescription from './routes/AnimeDescription';
 
 import "./App.css"
 import "./tailwind.css"
+import ListeAnime from './routes/ListAnime';
 
 const App = () => (
   <Router>
@@ -31,6 +32,7 @@ const App = () => (
         <Route path='/anime-search' element={<AnimeSearch />} />
         <Route path='/home-page' element={ <HomePage /> } />
         <Route path='/description-page/:id' element={ <AnimeDescription /> }/>
+        <Route path='/list-anime' element={ <ListeAnime /> }/>
         
       </Route>
       {/* Pages without Navbar */}
