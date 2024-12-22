@@ -21,6 +21,7 @@ import Staff from './routes/Staff';
 
 import "./App.css"
 import "./tailwind.css"
+import MoreInfos from './routes/MoreInfo';
 
 
 const App = () => (
@@ -35,6 +36,7 @@ const App = () => (
         <Route path='/staff-page/:id' element={ <Staff /> }/>
         <Route path='/list-anime' element={ <ListeAnime /> }/>
         <Route path='/characters/:id' element={ < AnimeCharacters/> }/>
+        <Route path='/more-info/:id' element={ < MoreInfos/> }/>
         
       </Route>
       {/* Pages without Navbar */}
