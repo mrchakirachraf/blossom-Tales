@@ -33,18 +33,17 @@ const AnimeList = ({ link }) => {
     }
 
     return (
-      
-        <div className=" my-10 flex flex-row flex-wrap justify-center gap-8">
+        <div className="my-10 flex flex-row flex-wrap justify-center gap-8">
           {anime.map((item) => (
               <Card
                   key={item.mal_id}
+                  id={item.mal_id} 
                   image={item.images.jpg.large_image_url}
                   title={item.title}
                   score={`${item.score} ⭐`}
               />
           ))}
         </div>
-      
     );
 };
 

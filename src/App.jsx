@@ -7,6 +7,7 @@ import BlossomTales from './routes/BlossomTales';
 import SignIn from './routes/SignIn';
 import AnimeSearch from './routes/AnimeSearch';
 import HomePage from './routes/HomePage';
+import AnimeDescription from './routes/AnimeDescription';
 
 
 
@@ -29,6 +30,7 @@ const App = () => (
         <Route path="/page1" element={<Page1 />} />
         <Route path='/anime-search' element={<AnimeSearch />} />
         <Route path='/home-page' element={ <HomePage /> } />
+        <Route path='/description-page/:id' element={ <AnimeDescription /> }/>
         
       </Route>
       {/* Pages without Navbar */}

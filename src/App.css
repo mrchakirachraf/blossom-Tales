@@ -2,6 +2,35 @@
 #root {
   width: 100%;
 }
+
+.btn_pink{
+  background-color: #E7B3C0;
+  color: white;
+  height: 50px;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.btn_pink:hover{
+  background-color: #D9D9D9;
+  color: black;
+  border-color: #D9D9D9;
+}
+
+.btn_gray{
+  background-color: #D9D9D9;
+  color: black;
+  height: 50px;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.btn_gray:hover{
+  background-color: #E7B3C0;
+  color: white;
+  border-color: #E7B3C0;
+}
+
 .btn_purple{
   background-color: #A5759D;
   color: rgba(255, 255, 255,0.5);
