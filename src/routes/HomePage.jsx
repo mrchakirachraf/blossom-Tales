@@ -45,7 +45,9 @@ const HomePage = () => {
             <div className={`${styles.currentSeason} mt-5`}>
                 <h2>{currentSeason}</h2>
             </div>
-            <AnimeList link={seasonLink} />
+            <div className="flex flex-col justify-center">
+                <AnimeList link={seasonLink} />
+            </div>
         </div>
     );
 };

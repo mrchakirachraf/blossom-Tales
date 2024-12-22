@@ -168,7 +168,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .mobileNav {
     display: flex;
   }
@@ -182,7 +182,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
 
   .mobileNav {
     display: none;
@@ -203,7 +203,7 @@
   z-index: 20;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .topLine {
     display: none;
   }
