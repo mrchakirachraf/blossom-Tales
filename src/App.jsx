@@ -10,7 +10,7 @@ import AnimeDescription from './routes/AnimeDescription';
 import AnimeCharacters from './routes/AnimeCharacters';
 import ListeAnime from './routes/ListAnime';
 import Staff from './routes/Staff';
-
+import AnimeRecommendations from './routes/AnimeRecommendations';
 
 
 
@@ -27,7 +27,7 @@ import MoreInfos from './routes/MoreInfo';
 const App = () => (
   <Router>
     <Routes>
-
+    
       {/* Pages with Navbar */}
       <Route element={<WithNavbar />}>
         <Route path='/anime-search' element={<AnimeSearch />} />
@@ -37,6 +37,7 @@ const App = () => (
         <Route path='/list-anime' element={ <ListeAnime /> }/>
         <Route path='/characters/:id' element={ < AnimeCharacters/> }/>
         <Route path='/more-info/:id' element={ < MoreInfos/> }/>
+        <Route path='/recommendations-page/:id' element={ <AnimeRecommendations /> }/>
         
       </Route>
       {/* Pages without Navbar */}

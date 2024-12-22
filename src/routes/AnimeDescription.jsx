@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styles from "../styles/AnimeDescription.module.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import DescriptionNavigation from "../components/DescriptionNavigation";
+import DescriptionNavigation from "../components/descriptionNavigation";
 import FavWatchLater from "../components/FavWatchLater";
 
 const AnimeDescription = () => {
@@ -34,7 +34,7 @@ const AnimeDescription = () => {
   if (!anime) {
     return (
       <p className="alertDanger w-10/12 text-center h-screen">
-        Anime not found.
+        Details not found.
       </p>
     );
   }
@@ -56,7 +56,7 @@ const AnimeDescription = () => {
           </div>
         </div>
 
-        <DescriptionNavigation />
+        <DescriptionNavigation id={id}/>
         
         <div className={`${styles.removeOnMobile} p-6 mb-10 mx-8 lg:mx-24 lg:flex flex-row justify-center items-center gap-10 text-justify`}>
           <img src={anime.images.jpg.large_image_url} alt={anime.title} />
