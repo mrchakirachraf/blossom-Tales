@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import WithNavbar from './layouts/WithNavBar';
 import WithoutNavbar from './layouts/WithoutNavBar';
-import Page1 from './routes/Page1';
 import BlossomTales from './routes/BlossomTales';
 import SignIn from './routes/SignIn';
 import AnimeSearch from './routes/AnimeSearch';
 import HomePage from './routes/HomePage';
 import AnimeDescription from './routes/AnimeDescription';
+import ListeAnime from './routes/ListAnime';
 
 
 
@@ -20,7 +20,6 @@ import AnimeDescription from './routes/AnimeDescription';
 
 import "./App.css"
 import "./tailwind.css"
-import ListeAnime from './routes/ListAnime';
 
 const App = () => (
   <Router>
@@ -28,7 +27,6 @@ const App = () => (
 
       {/* Pages with Navbar */}
       <Route element={<WithNavbar />}>
-        <Route path="/page1" element={<Page1 />} />
         <Route path='/anime-search' element={<AnimeSearch />} />
         <Route path='/home-page' element={ <HomePage /> } />
         <Route path='/description-page/:id' element={ <AnimeDescription /> }/>
