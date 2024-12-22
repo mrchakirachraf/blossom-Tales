@@ -1,0 +1,29 @@
+
+.showOnMobile {
+    display: none;
+}
+
+
+/* Phone */
+@media (max-width: 1024px) {
+    
+
+    .removeOnMobile {
+        display: none; /* Cache les éléments sur mobile */
+    }
+
+    .showOnMobile {
+        display: flex; /* Affiche les éléments sur mobile */
+    }
+}
+
+/* Section Desktop */
+@media (min-width: 1025px) {
+    .removeOnMobile {
+        display: flex; /* Affiche les éléments sur desktop */
+    }
+
+    .showOnMobile {
+        display: none; /* Cache les éléments sur desktop */
+    }
+}
