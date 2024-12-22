@@ -4,6 +4,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
+import {useNavigate  } from "react-router-dom";
+
+
+    
 
 const AnimeSlider = () => {
   const [animeList, setAnimeList] = useState([]);
@@ -23,9 +27,10 @@ const AnimeSlider = () => {
     fetchAnimeData();
   }, []);
 
+  const navigate = useNavigate();
+
   const handleAnimeClick = (animeId) => {
-    console.log(animeId);
-    // navigate(`/anime/${animeId}`); // Redirect to the anime description page
+    navigate(`/description-page/${animeId}`); // Redirect to the anime description page
   };
 
   return (

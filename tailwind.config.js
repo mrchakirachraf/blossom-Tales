@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors : {
+        'black0.5' : "rgba(0,0,0,0.5)",
+        "mainPink" : '#E7B3C0',
+      }
 
     },
   },

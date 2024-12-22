@@ -36,7 +36,7 @@ const BlossomTales = () => {
                     </div>
 
                     <div className={styles.button_group}>
-                        <Link to="/anime-list">
+                        <Link to="/home-page">
                             <Button style={{}} class="btn_purple  w-28 lg:w-52" text="Anime List" />
                         </Link>
                         <Link to="/signin">
