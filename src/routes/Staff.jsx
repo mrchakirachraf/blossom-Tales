@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import { useParams } from "react-router-dom";
 import AnimeStaffList from "../components/AnimeStaffList";
-import DescriptionNavigation from "../components/DescriptionNavigation";
+import DescriptionNavigation from "../components/descriptionNavigation";
 import PinkLogo from "../components/PinkLogo";
 
 const Staff = () => {
