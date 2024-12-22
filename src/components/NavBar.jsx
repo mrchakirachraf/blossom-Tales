@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./componentsStyles/NavBar.module.css";
 import SearchBar from "./SearchBar";
 import { BsSearch, BsBook, BsPerson } from 'react-icons/bs';
-import { useNavigate  } from "react-router-dom";
+import { useNavigate, Link  } from "react-router-dom";
 
 
 const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
@@ -27,22 +27,22 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
         </div>
         <ul>
           <li>
-            <a href="#">
+            <a>
               <div onClick={toggleSidebar} className={`${styles.SearchIcon}`}><BsSearch size={30} /></div>
               <div className={`${styles.SearchBar}`} ><SearchBar onSearch={handleSearch} /></div>
             </a>
           </li>
           <li>
-            <a href="#">
+            <Link to="/list-anime">
               <BsBook size={30} />
               <span className={styles.navItem}>Anime List</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/my-list-fav">
               <BsPerson size={30} />
               <span className={styles.navItem}>My List</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -78,8 +78,8 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
         <div className={styles.mobileMenu}>
           <ul>
             <li><SearchBar onSearch={handleSearch} /></li>
-            <li><a href="#">Anime list</a></li>
-            <li><a href="#">My List</a></li>
+            <li><a>Anime list</a></li>
+            <li><a>My List</a></li>
           </ul>
         </div>
       )}
