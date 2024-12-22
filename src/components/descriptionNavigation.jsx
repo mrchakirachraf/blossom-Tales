@@ -18,8 +18,8 @@ const DescriptionNavigation = ({id}) => {
       setActivePage("staff");
     } else if (path.includes("recommendations")) {
       setActivePage("recommendations");
-    } else if (path.includes("more-infos")) {
-      setActivePage("more-infos");
+    } else if (path.includes("more-info")) {
+      setActivePage("more-info");
     }
   }, []);
 
@@ -49,9 +49,9 @@ const DescriptionNavigation = ({id}) => {
           text="Recommendations"
         />
       </Link>
-      <Link to={`/more-info-page/${id}`}>
+      <Link to={`/more-info/${id}`}>
         <Button
-          class={`${activePage === "more-infos" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+          class={`${activePage === "more-info" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
           text="More Infos"
         />
       </Link>

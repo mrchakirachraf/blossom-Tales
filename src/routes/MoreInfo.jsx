@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styles from "../styles/MoreInfos.module.css";
-import DescriptionNavigation from "../components/DescriptionNavigation";
+import DescriptionNavigation from "../components/descriptionNavigation";
+import PinkLogo from "../components/PinkLogo";
 
 const MoreInfos = () => {
   const { id } = useParams(); // Récupère l'ID depuis l'URL
@@ -39,12 +40,8 @@ const MoreInfos = () => {
   return (
     <div className={`text-black ${styles.description_container}`}>
       {/* Logo */}
-      <div className={`${styles.removeOnMobile} mb-10`} id={styles.logo}>
-        <img 
-          src="https://see.fontimg.com/api/rf5/axo9R/NWY4ZDEwYzM0YjUxNDI1N2FjMjMzZWUzOWUxNDlhNmUudHRm/Qmxvc3NvbSBUYWxlcw/lucky-sunshine.png?r=fs&h=143&w=1000&fg=B06D6D&bg=FFFFFF&tb=1&s=143" 
-          alt="Cursive fonts" 
-        />
-      </div>
+      <PinkLogo />
+
 
       {/* Titre et navigation */}
       <div className={`${styles.removeOnMobile} relative mb-10 justify-center mx-24`}>
@@ -53,16 +50,15 @@ const MoreInfos = () => {
         </h2>
       </div>
 
-      <DescriptionNavigation />
+      <DescriptionNavigation id={id} />
 
       {/* Section Desktop */}
       <div className={`p-6 mb-10 mx-8 lg:mx-24 lg:flex flex-row justify-center items-center gap-10 text-justify ${styles.removeOnMobile}`}>
         <img
           src={anime.images.jpg.large_image_url}
           alt={anime.title}
-          className="rounded-lg w-1/2"
         />
-        <div className="flex flex-col justify-evenly gap-8 w-1/2">
+        <div className="flex flex-col justify-evenly gap-8 ">
           <h3 className="text-black0.5 text-2xl font-bold text-center ">More Infos</h3>
           <div className="text-xl">
             {anime.background ? (

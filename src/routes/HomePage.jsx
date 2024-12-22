@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/HomePage.module.css";
 import AnimeSlider from "../components/AnimeSlider";
 import AnimeList from "../components/AnimeList";
+import PinkLogo from "../components/PinkLogo";
 
 const HomePage = () => {
     const [currentSeason, setCurrentSeason] = useState('');
@@ -33,12 +34,7 @@ const HomePage = () => {
 
     return (
         <div className={`${styles.HomePage_container}`}>
-            <div id={styles.logo}>
-                <img 
-                    src="https://see.fontimg.com/api/rf5/axo9R/NWY4ZDEwYzM0YjUxNDI1N2FjMjMzZWUzOWUxNDlhNmUudHRm/Qmxvc3NvbSBUYWxlcw/lucky-sunshine.png?r=fs&h=143&w=1000&fg=B06D6D&bg=FFFFFF&tb=1&s=143" 
-                    alt="Cursive fonts" 
-                />
-            </div>
+            <PinkLogo />
             <div>
                 <AnimeSlider />
             </div>

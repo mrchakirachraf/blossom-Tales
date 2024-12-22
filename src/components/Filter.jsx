@@ -26,7 +26,6 @@ const Filter = ({ onLinkChange }) => {
   useEffect(() => {
     const link = `https://api.jikan.moe/v4/seasons/${year}/${season}`;
     onLinkChange(link);
-    console.log(link); // Log the current API link
   }, [year, season, onLinkChange]);
 
   return (

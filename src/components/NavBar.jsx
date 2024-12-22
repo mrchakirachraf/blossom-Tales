@@ -78,8 +78,8 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
         <div className={styles.mobileMenu}>
           <ul>
             <li><SearchBar onSearch={handleSearch} /></li>
-            <li><a>Anime list</a></li>
-            <li><a>My List</a></li>
+            <li><Link to="/list-anime">Anime list</Link></li>
+            <li><Link to="/my-list-fav">My List</Link></li>
           </ul>
         </div>
       )}

@@ -4,6 +4,7 @@ import styles from "../styles/AnimeDescription.module.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import DescriptionNavigation from "../components/descriptionNavigation";
 import FavWatchLater from "../components/FavWatchLater";
+import PinkLogo from "../components/PinkLogo";
 
 const AnimeDescription = () => {
   const { id } = useParams(); // Get the mal_id from the URL params
@@ -42,12 +43,8 @@ const AnimeDescription = () => {
   return (
     <div className={` text-black ${styles.description_container}`}>
         
-        <div className={`${styles.removeOnMobile} mb-10`} id={styles.logo}>
-          <img 
-              src="https://see.fontimg.com/api/rf5/axo9R/NWY4ZDEwYzM0YjUxNDI1N2FjMjMzZWUzOWUxNDlhNmUudHRm/Qmxvc3NvbSBUYWxlcw/lucky-sunshine.png?r=fs&h=143&w=1000&fg=B06D6D&bg=FFFFFF&tb=1&s=143" 
-              alt="Cursive fonts" 
-          />
-        </div>
+        <PinkLogo />
+
         
         <div className={`${styles.removeOnMobile} relative mb-10 justify-center mx-24`}>
           <h2 className=' text-black0.5 text-center text-3xl font-bold'>{anime.title.toUpperCase()}</h2>
