@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "./Card";
+import CharacterCard from "./CharacterCard";
 
 const AnimeStaffList = ({ id }) => {
     const [anime, setAnime] = useState([]);
@@ -31,17 +31,20 @@ const AnimeStaffList = ({ id }) => {
     }
 
     return (
-        <div className="my-10 flex flex-row flex-wrap justify-center gap-8">
-          {anime.map((item) => (
-              <Card
-                  key={item.person.mal_id}
-                  id={item.person.mal_id} 
-                  image={item.person.images.jpg.image_url}
-                  title={item.person.name}
-                  score={item.position}
-              />
-          ))}
-        </div>
+      <div className="my-10 flex flex-row flex-wrap justify-center gap-8">
+        {anime.map((item) => (
+          <CharacterCard
+            key={item.person.mal_id}
+            id={item.person.mal_id}
+            image={item.person.images.jpg.image_url}
+            name={item.person.name}
+            role={item.positions.map((position, index) => (
+              index < item.positions.length - 1 ? `${position}, ` : position
+            )).join('')}
+          />
+        ))}
+      </div>
+
     );
 };
 

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styles from "./componentsStyles/descriptionNavigation.module.css";
-import Button from "../components/Button";
+import Button from "./Button";
+import { Link  } from "react-router-dom";
 
-const DescriptionNavigation = () => {
+
+const DescriptionNavigation = ({id}) => {
   const [activePage, setActivePage] = useState("");
 
   useEffect(() => {
@@ -12,8 +14,8 @@ const DescriptionNavigation = () => {
       setActivePage("details");
     } else if (path.includes("characters")) {
       setActivePage("characters");
-    } else if (path.includes("relations")) {
-      setActivePage("relations");
+    } else if (path.includes("staff-page")) {
+      setActivePage("staff");
     } else if (path.includes("recommendations")) {
       setActivePage("recommendations");
     } else if (path.includes("more-infos")) {
@@ -23,26 +25,36 @@ const DescriptionNavigation = () => {
 
   return (
     <div className={`mt-10 lg:mx-24 lg:mt-0 mb-10 flex flex-row flex-wrap justify-between items-center gap-8 ${styles.buttonsGroupe}`}>
-      <Button
-        class={`${activePage === "details" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
-        text="Details"
-      />
-      <Button
-        class={`${activePage === "characters" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
-        text="Characters"
-      />
-      <Button
-        class={`${activePage === "relations" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
-        text="Relations"
-      />
-      <Button
-        class={`${activePage === "recommendations" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
-        text="Recommendations"
-      />
-      <Button
-        class={`${activePage === "more-infos" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
-        text="More Infos"
-      />
+      <Link to={`/description-page/${id}`}>
+        <Button
+          class={`${activePage === "details" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+          text="Details"
+        />
+      </Link>
+      <Link to={`/characters/${id}`}>
+        <Button
+          class={`${activePage === "characters" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+          text="Characters"
+        />
+      </Link>
+      <Link to={`/staff-page/${id}`}>
+        <Button
+          class={`${activePage === "staff" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+          text="Staff"
+        />
+      </Link>
+      <Link to={`/recommendations-page/${id}`}>
+        <Button
+          class={`${activePage === "recommendations" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+          text="Recommendations"
+        />
+      </Link>
+      <Link to={`/more-info-page/${id}`}>
+        <Button
+          class={`${activePage === "more-infos" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+          text="More Infos"
+        />
+      </Link>
     </div>
   );
 };

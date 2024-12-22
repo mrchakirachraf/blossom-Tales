@@ -46,14 +46,9 @@ const Staff = () => {
                     alt="Cursive fonts" 
                 />
             </div>
-            <div className={` relative mb-10 justify-center mx-24`}>
-                <h2 className=' text-black0.5 text-center text-3xl font-bold'>{anime.title.toUpperCase()}</h2>
-                <div className={`absolute top-0 right-0 justify-center`}>
-                    <FavWatchLater id={anime.mal_id}/>
-                </div>
-            </div>
-            <DescriptionNavigation />
-            <AnimeStaffList id={id} />
+            <h2 className=' text-black0.5 text-center text-3xl font-bold mb-10'>Staff</h2>
+            <DescriptionNavigation id={id} />
+            <AnimeStaffList id={id}/>
         </div>
         
     );
