@@ -28,7 +28,7 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
         <ul>
           <li>
             <a href="#">
-              <div className={`${styles.SearchIcon}`}><BsSearch size={30} /></div>
+              <div onClick={toggleSidebar} className={`${styles.SearchIcon}`}><BsSearch size={30} /></div>
               <div className={`${styles.SearchBar}`} ><SearchBar onSearch={handleSearch} /></div>
             </a>
           </li>
