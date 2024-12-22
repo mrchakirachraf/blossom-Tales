@@ -235,3 +235,20 @@
   color: #E7B3C0;
 }
 
+/*My part*/
+
+.active .SearchIcon {
+  display: none;
+}
+.SearchBar{
+  display: none;
+}
+
+.active .SearchBar{
+  display: block;
+}
+
+/* Phone */
+@media (max-width: 1024px){
+
+}

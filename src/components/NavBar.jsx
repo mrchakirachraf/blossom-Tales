@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import styles from "./componentsStyles/NavBar.module.css";
+import SearchBar from "./SearchBar";
 import { BsSearch, BsBook, BsPerson } from 'react-icons/bs';
+import { useNavigate  } from "react-router-dom";
+
 
 const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
+  const handleSearch = (query) => {
+    if (query.trim()) {
+        navigate(`/anime-search?query=${encodeURIComponent(query)}`);
+    }
+  };
   return (
     <>
       {/* Sidebar Navigation */}
@@ -19,8 +28,8 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
         <ul>
           <li>
             <a href="#">
-              <BsSearch size={30} />
-              <span className={styles.navItem}>Search</span>
+              <div className={`${styles.SearchIcon}`}><BsSearch size={30} /></div>
+              <div className={`${styles.SearchBar}`} ><SearchBar onSearch={handleSearch} /></div>
             </a>
           </li>
           <li>
@@ -60,7 +69,6 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
           className={styles.logo}
         />
         <button className={styles.searchIcon}>
-          <BsSearch size={30} color="#E7B3C0" />
         </button>
         <div className={styles.topLine}></div>
       </nav>
@@ -69,7 +77,7 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
       {isMobileMenuOpen && (
         <div className={styles.mobileMenu}>
           <ul>
-            <li><a href="#">Search</a></li>
+            <li><SearchBar onSearch={handleSearch} /></li>
             <li><a href="#">Anime list</a></li>
             <li><a href="#">My List</a></li>
           </ul>
