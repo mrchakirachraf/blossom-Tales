@@ -36,11 +36,11 @@ const AnimeList = ({ link }) => {
         <div className="my-10 flex flex-row flex-wrap justify-center gap-8">
           {anime.map((item) => (
               <Card
-                  key={item.mal_id}
-                  id={item.mal_id} 
-                  image={item.images.jpg.large_image_url}
-                  title={item.title}
-                  score={`${item.score} ⭐`}
+                key={item.mal_id || item.entry?.mal_id}
+                id={item.mal_id || item.entry?.mal_id}
+                image={item.images?.jpg?.large_image_url || item.entry?.images?.jpg?.large_image_url}
+                title={item.title || item.entry?.title}
+                score={item.score ? `${item.score} ⭐` : ""}
               />
           ))}
         </div>

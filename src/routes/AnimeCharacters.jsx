@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AnimeListCharacters from "../components/AnimeListCharacters"; // Utilise AnimeList existant
 import DescriptionNavigation from "../components/descriptionNavigation";
-import styles from "../styles/AnimeDescription.module.css";
-import FavWatchLater from "../components/FavWatchLater";
+
 
 const AnimeCharacters = () => {
   const { id } = useParams(); // ID de l'anime dans les paramètres de l'URL

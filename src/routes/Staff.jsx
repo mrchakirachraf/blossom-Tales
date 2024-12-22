@@ -2,7 +2,6 @@ import React,{useState,useEffect} from "react";
 import { useParams } from "react-router-dom";
 import AnimeStaffList from "../components/AnimeStaffList";
 import DescriptionNavigation from "../components/DescriptionNavigation";
-import FavWatchLater from "../components/FavWatchLater";
 
 const Staff = () => {
     const { id } = useParams(); // Get the mal_id from the URL params
@@ -33,7 +32,7 @@ const Staff = () => {
     if (!anime) {
     return (
         <p className="alertDanger w-10/12 text-center h-screen">
-        Anime not found.
+        Staff not found.
         </p>
     );
     }

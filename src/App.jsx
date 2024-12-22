@@ -10,7 +10,7 @@ import AnimeDescription from './routes/AnimeDescription';
 import AnimeCharacters from './routes/AnimeCharacters';
 import ListeAnime from './routes/ListAnime';
 import Staff from './routes/Staff';
-
+import AnimeRecommendations from './routes/AnimeRecommendations';
 
 
 
@@ -26,7 +26,7 @@ import "./tailwind.css"
 const App = () => (
   <Router>
     <Routes>
-
+    
       {/* Pages with Navbar */}
       <Route element={<WithNavbar />}>
         <Route path='/anime-search' element={<AnimeSearch />} />
@@ -35,6 +35,7 @@ const App = () => (
         <Route path='/staff-page/:id' element={ <Staff /> }/>
         <Route path='/list-anime' element={ <ListeAnime /> }/>
         <Route path='/characters/:id' element={ < AnimeCharacters/> }/>
+        <Route path='/recommendations-page/:id' element={ <AnimeRecommendations /> }/>
         
       </Route>
       {/* Pages without Navbar */}
