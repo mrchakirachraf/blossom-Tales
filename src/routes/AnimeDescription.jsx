@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styles from "../styles/AnimeDescription.module.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import DescriptionNavigation from "../components/descriptionNavigation";
+import DescriptionNavigation from "../components/DescriptionNavigation";
 import FavWatchLater from "../components/FavWatchLater";
 
 const AnimeDescription = () => {

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import styles from "../styles/ListeAnime.module.css";
 import Filter from "../components/Filter";
 import AnimeList from "../components/AnimeList";
 

@@ -8,7 +8,7 @@ import AnimeSearch from './routes/AnimeSearch';
 import HomePage from './routes/HomePage';
 import AnimeDescription from './routes/AnimeDescription';
 import ListeAnime from './routes/ListAnime';
-
+import Staff from './routes/Staff';
 
 
 
@@ -21,6 +21,7 @@ import ListeAnime from './routes/ListAnime';
 import "./App.css"
 import "./tailwind.css"
 
+
 const App = () => (
   <Router>
     <Routes>
@@ -30,6 +31,7 @@ const App = () => (
         <Route path='/anime-search' element={<AnimeSearch />} />
         <Route path='/home-page' element={ <HomePage /> } />
         <Route path='/description-page/:id' element={ <AnimeDescription /> }/>
+        <Route path='/staff-page/:id' element={ <Staff /> }/>
         <Route path='/list-anime' element={ <ListeAnime /> }/>
         
       </Route>
