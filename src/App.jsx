@@ -7,6 +7,7 @@ import SignIn from './routes/SignIn';
 import AnimeSearch from './routes/AnimeSearch';
 import HomePage from './routes/HomePage';
 import AnimeDescription from './routes/AnimeDescription';
+import AnimeCharacters from './routes/AnimeCharacters';
 import ListeAnime from './routes/ListAnime';
 import Staff from './routes/Staff';
 
@@ -33,6 +34,7 @@ const App = () => (
         <Route path='/description-page/:id' element={ <AnimeDescription /> }/>
         <Route path='/staff-page/:id' element={ <Staff /> }/>
         <Route path='/list-anime' element={ <ListeAnime /> }/>
+        <Route path='/characters/:id' element={ < AnimeCharacters/> }/>
         
       </Route>
       {/* Pages without Navbar */}
