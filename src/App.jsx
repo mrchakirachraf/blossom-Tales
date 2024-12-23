@@ -11,17 +11,12 @@ import AnimeCharacters from './routes/AnimeCharacters';
 import ListeAnime from './routes/ListAnime';
 import Staff from './routes/Staff';
 import AnimeRecommendations from './routes/AnimeRecommendations';
-
-
-
-
-
-
-
-
+import FavouritesAnimes from './routes/FavoritesAnimes';
+import MoreInfos from './routes/MoreInfo';
+import WatchLaterAnimes from './routes/WatchLaterAnimes';
 import "./App.css"
 import "./tailwind.css"
-import MoreInfos from './routes/MoreInfo';
+
 
 
 const App = () => (
@@ -38,13 +33,13 @@ const App = () => (
         <Route path='/characters/:id' element={ < AnimeCharacters/> }/>
         <Route path='/more-info/:id' element={ < MoreInfos/> }/>
         <Route path='/recommendations-page/:id' element={ <AnimeRecommendations /> }/>
-        
+        <Route path='/my-list-fav' element={< FavouritesAnimes/> } />
+        <Route path="/my-watch-later" element={<WatchLaterAnimes /> } />
       </Route>
       {/* Pages without Navbar */}
       <Route element={<WithoutNavbar />}>
         <Route path="" element={<BlossomTales />} />
         <Route path="/signin" element={<SignIn />} />
-
       </Route>
 
     </Routes>
