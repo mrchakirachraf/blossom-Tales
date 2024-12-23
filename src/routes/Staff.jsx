@@ -32,7 +32,7 @@ const Staff = () => {
 
     if (!anime) {
     return (
-        <p className="alertDanger w-10/12 text-center h-screen">
+        <p className="alertDanger text-center">
         Staff not found.
         </p>
     );

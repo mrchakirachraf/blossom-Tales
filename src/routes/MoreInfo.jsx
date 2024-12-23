@@ -22,17 +22,17 @@ const MoreInfos = () => {
       }
     };
 
-    fetchAnimeDetails(); // Appelle la fonction pour récupérer les détails
+    fetchAnimeDetails(); 
   }, [id]);
 
   if (isLoading) {
-    return <p className="alertInfo">Chargement des détails de l'anime...</p>;
+    return <p className="alertInfo">Loading anime details...</p>;
   }
 
   if (!anime) {
     return (
-      <p className="alertDanger w-10/12 text-center h-screen">
-        Anime introuvable.
+      <p className="alertDanger text-center">
+       Anime not found.
       </p>
     );
   }
@@ -64,7 +64,7 @@ const MoreInfos = () => {
             {anime.background ? (
               <p>{anime.background}</p>
             ) : (
-              <p className="italic">Aucune information supplémentaire disponible.</p>
+              <p className="italic">No additional information available.</p>
             )}
           </div>
         </div>
@@ -72,7 +72,7 @@ const MoreInfos = () => {
 
       {/* Section Mobile */}
       <div
-        className={`flex flex-col justify-center items-center text-justify gap-6 p-4 ${styles.showOnMobile}`}
+        className={` flex-col justify-center items-center text-justify gap-6 p-4 ${styles.showOnMobile}`}
       >
         <div
           style={{
@@ -122,7 +122,7 @@ const MoreInfos = () => {
           {anime.background ? (
             <p>{anime.background}</p>
           ) : (
-            <p className="italic">Aucune information supplémentaire disponible.</p>
+            <p className="italic">No additional information available.</p>
           )}
         </div>
       </div>

@@ -14,7 +14,7 @@ const AnimeSearch = () => {
     return (
         <div className={`relative flex flex-col items-center ${styles.Search_Container}`}>
             <PinkLogo />
-            <h2 className="font-bold text-xl my-5">Results for {query} ...</h2>
+            <h2 className="font-bold text-2xl my-5">Results for {query} ...</h2>
             <AnimeList link={link}/>
         </div>
     );

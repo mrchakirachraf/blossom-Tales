@@ -41,7 +41,7 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
           <li>
             <Link to="/my-list-fav">
               <BsPerson size={30} />
-              <span className={styles.navItem}>My List</span>
+              <span className={styles.navItem}>My Lists</span>
             </Link>
           </li>
         </ul>
@@ -81,7 +81,7 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
           <ul>
             <li><SearchBar onSearch={handleSearch} /></li>
             <li><Link to="/list-anime">Anime list</Link></li>
-            <li><Link to="/my-list-fav">My List</Link></li>
+            <li><Link to="/my-list-fav">My Lists</Link></li>
           </ul>
         </div>
       )}

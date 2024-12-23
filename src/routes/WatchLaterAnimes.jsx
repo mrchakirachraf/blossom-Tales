@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
 import PinkLogo from "../components/PinkLogo";
 import { Link } from "react-router-dom";
+import styles from "../styles/FavoritesAnimes.module.css";
+
 
 const WatchLaterAnimes = () => {
   const [watchLater, setWatchLater] = useState([]);
@@ -33,13 +35,13 @@ const WatchLaterAnimes = () => {
   }, [watchLater]);
 
   return (
-    <div className="text-black0.5" style={{ padding: "20px" }}>
+    <div className="text-black0.5">
       <PinkLogo />
-      <div className="relative mx-10 lg:mx-24">
-        <h1 className="text-black0.5 text-center text-3xl font-bold mb-10">Watch Later</h1>
-        <div className={`absolute top-0 right-0 justify-center`}>
-          <div>
-            <Link to="/my-list-fav">
+      <div className="relative mb-4 lg:mb-10 mx-10 lg:mx-24">
+        <h1 className="hidden lg:block text-black0.5 text-center text-3xl font-bold mb-10">Watch Later</h1>
+        <div className={`relative lg:absolute lg:top-0 lg:right-0 justify-center`}>
+          <div  className="flex justify-center">
+            <Link className={`${styles.FW_Buttons}`} to="/my-list-fav">
               <button
                 className={`px-4 py-2 rounded-full bg-[#D9D9D9] text-black0.5`}
               >
@@ -47,7 +49,7 @@ const WatchLaterAnimes = () => {
               </button>
             </Link>
             <span>&nbsp;&nbsp;&nbsp;</span>
-            <Link to="/my-watch-later">
+            <Link className={`${styles.FW_Buttons}`} to="/my-watch-later">
               <button className={`px-4 py-2 rounded-full bg-mainPink text-white`}>
                 <i className="fas fa-clock"></i>
               </button>

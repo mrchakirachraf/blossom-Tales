@@ -34,7 +34,7 @@ const AnimeDescription = () => {
 
   if (!anime) {
     return (
-      <p className="alertDanger w-10/12 text-center h-screen">
+      <p className="alertDanger text-center">
         Details not found.
       </p>
     );

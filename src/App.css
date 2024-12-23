@@ -69,6 +69,12 @@
   color: #31708f;
 }
 
+*:focus{
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 /* Swiper pagination dots */
 .swiper-pagination-bullet {
   background-color: gray; /* Default color */

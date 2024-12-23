@@ -1,5 +1,6 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from "react";
+import styles from "./componentsStyles/Footer.module.css"
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <p className="font-semibold mb-4">Follow us</p>
 
       {/* Icônes sociales */}
-      <div className="flex justify-center space-x-10"> {/* Ajustez space-x */}
+      <div className={`${styles.socials} flex justify-center space-x-10`}> {/* Ajustez space-x */}
         <a
           href="https://facebook.com"
           target="_blank"

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import styles from "./componentsStyles/FavWatchLater.module.css";
 
 const FavWatchLater = ({id}) => {
     const [isFavorited, setIsFavorited] = useState(false);
@@ -46,7 +47,7 @@ const FavWatchLater = ({id}) => {
         <div>
             {/* Add to Favorites */}
             <button
-              className={`px-4 py-2 rounded-full ${
+              className={`px-4 py-2 rounded-full ${styles.FW_Buttons} ${
                 isFavorited ? "bg-mainPink text-white" : "bg-[#d9d9d9] text-black"
               }`}
               onClick={toggleFavorite}
@@ -56,7 +57,7 @@ const FavWatchLater = ({id}) => {
             <span>&nbsp;&nbsp;&nbsp;</span>
             {/* Add to Watch Later */}
             <button
-              className={`px-4 py-2 rounded-full ${
+              className={`px-4 py-2 rounded-full ${styles.FW_Buttons} ${
                 isWatchLater ? "bg-mainPink text-white" : "bg-[#d9d9d9] text-black"
               }`}
               onClick={toggleWatchLater}

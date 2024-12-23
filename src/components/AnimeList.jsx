@@ -29,7 +29,7 @@ const AnimeList = ({ link }) => {
     }
 
     if (!anime.length) {
-        return <p className="alertDanger w-10/12 text-center h-screen">No anime found. Try another search.</p>;
+        return <p className="alertDanger text-center">No anime found. Try another search.</p>;
     }
 
     return (

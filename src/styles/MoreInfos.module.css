@@ -17,13 +17,3 @@
     }
 }
 
-/* Section Desktop */
-@media (min-width: 1025px) {
-    .removeOnMobile {
-        display: flex; /* Affiche les éléments sur desktop */
-    }
-
-    .showOnMobile {
-        display: none; /* Cache les éléments sur desktop */
-    }
-}

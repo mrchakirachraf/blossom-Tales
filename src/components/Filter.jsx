@@ -35,8 +35,8 @@ const Filter = ({ onLinkChange }) => {
         {seasons.map((s) => (
           <button
             key={s.value}
-            className={`p-3 rounded-full text-xl ${
-              season === s.value ? "bg-mainPink text-white" : "bg-gray-200"
+            className={` ${styles.seasonButton} p-3 rounded-full text-xl ${
+              season === s.value ? "bg-mainPink" : "bg-[#d9d9d9]"
             }`}
             onClick={() => setSeason(s.value)}
           >
@@ -48,7 +48,7 @@ const Filter = ({ onLinkChange }) => {
       <div style={{height:'3rem'}} className="flex justify-center items-center gap-4">
         {/* Year Dropdown */}
         <select
-          className={`${styles.yearDropdown} text-black0.5 text-xl p-2 rounded-lg border  `}
+          className={`${styles.yearDropdown} text-black0.5 text-xl p-2 rounded-lg`}
           value={year}
           onChange={(e) => setYear(e.target.value)}
         >
