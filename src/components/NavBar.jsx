@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./componentsStyles/NavBar.module.css";
 import SearchBar from "./SearchBar";
-import { BsSearch, BsBook, BsPerson, BsCursor } from 'react-icons/bs';
+import { BsSearch, BsBook, BsPerson, BsCursor, BsBoxArrowRight } from 'react-icons/bs';
 import { useNavigate, Link  } from "react-router-dom";
 
 
@@ -44,6 +44,12 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
               <span className={styles.navItem}>My Lists</span>
             </Link>
           </li>
+          <li>
+            <Link to="/">
+              <BsBoxArrowRight size={30} />
+              <span className={styles.navItem}>Disconnect</span>
+            </Link>
+          </li>
         </ul>
       </div>
 
@@ -82,6 +88,7 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
             <li><SearchBar onSearch={handleSearch} /></li>
             <li><Link to="/list-anime">Anime list</Link></li>
             <li><Link to="/my-list-fav">My Lists</Link></li>
+            <li><Link to="/">Disconnect</Link></li>
           </ul>
         </div>
       )}
