@@ -61,7 +61,7 @@ const WatchLaterAnimes = () => {
       {animeDetails.length === 0 ? (
         <p className="alertDanger text-center">No items in Watch Later.</p>
       ) : (
-        <div className="mx-10 lg:mx-24">
+        <div className="flex flex-row flex-wrap justify-center items-center gap-4 lg:gap-8 mx-10 lg:mx-24">
           {animeDetails.map((item) => (
             <div key={item.mal_id || item.entry?.mal_id}>
               <Card

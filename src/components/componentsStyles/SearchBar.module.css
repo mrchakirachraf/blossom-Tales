@@ -40,7 +40,7 @@
     box-shadow: 1px 1px 1px 1px #A5759D;
 }
 /* Phone */
-@media (max-width: 1080px){
+@media (max-width: 1024px){
 
     .search_input::placeholder {
         font-size: 15px;

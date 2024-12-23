@@ -28,7 +28,7 @@ const BlossomTales = () => {
                     </p>
 
                     {/* Search Section */}
-                    <div style={{ width: "100%" }}>
+                    <div style={{ width: "100%"}}>
                         <SearchBar onSearch={handleSearch} />
                     </div>
 

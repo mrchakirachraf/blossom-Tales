@@ -62,7 +62,7 @@ const FavouritesAnimes = () => {
         <p className="alertDanger text-center" >No favorites added yet.</p>
       ) : (
         
-        <div className="mx-10 lg:mx-24" >
+        <div className="flex flex-row flex-wrap justify-center items-center gap-4 lg:gap-8 mx-10 lg:mx-24" >
             {animeDetails.map((item) => (
                 <div>
                     <Card
