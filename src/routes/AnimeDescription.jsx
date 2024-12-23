@@ -53,6 +53,10 @@ const AnimeDescription = () => {
           </div>
         </div>
 
+        <div className={`${styles.showOnMobile} lg:hidden relative mb-10 justify-center mx-24`}>
+          <h2 className=' text-gray-600 text-center text-3xl font-bold'>{anime.title.toUpperCase()}</h2>
+        </div>
+
         <DescriptionNavigation id={id}/>
         
         <div className={`${styles.removeOnMobile} p-6 mb-10 mx-8 lg:mx-24 lg:flex flex-row justify-center items-center gap-10 text-justify`}>

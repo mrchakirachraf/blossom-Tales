@@ -50,6 +50,12 @@ const MoreInfos = () => {
         </h2>
       </div>
 
+      <div className={`${styles.showOnMobile} relative mb-10 justify-center mx-24`}>
+        <h2 className="text-gray-600 text-center text-3xl font-bold">
+            More Infos
+        </h2>
+      </div>
+
       <DescriptionNavigation id={id} />
 
       {/* Section Desktop */}
