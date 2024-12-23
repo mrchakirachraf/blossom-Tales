@@ -4,10 +4,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
-import {useNavigate  } from "react-router-dom";
-
-
-    
+import { useNavigate } from "react-router-dom";
+import styles from './componentsStyles/AnimeSlider.module.css'; // Import the CSS module
 
 const AnimeSlider = () => {
   const [animeList, setAnimeList] = useState([]);
@@ -47,40 +45,21 @@ const AnimeSlider = () => {
       >
         {animeList.map((anime) => (
           <SwiperSlide key={anime.mal_id}>
-            <div style={{ position: 'relative', textAlign: 'center', cursor: 'pointer' }}
+            <div
+              className={styles.animeSlide}
               onClick={() => handleAnimeClick(anime.mal_id)} // Handle click event
             >
               {/* Anime Image */}
               <img
                 src={anime.trailer.images.maximum_image_url}
                 alt={anime.title}
-                style={{
-                  width: '100%',
-                  height: '400px',
-                  objectFit: 'contain',
-                  borderRadius: '10px',
-                }}
+                className={styles.animeImage}
               />
-              {/* Anime Title */}
-              <h3
-                style={{
-                  position: 'absolute',
-                  bottom: '10px',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                  color: 'white',
-                  fontWeight : "bold",
-                  fontSize : "30px",
-                  backgroundColor: "rgba(0, 0, 0, 0.3)",
-                  padding: '5px 10px',
-                  borderRadius: '5px',
-                  zIndex: 2,
-                }}
-              >
-                {anime.title}
-              </h3>
-            </div>
-            {/* Dark overlay */}
+              {/* Title Overlay */}
+              <div className={styles.animeTitleOverlay}>
+                <h3>{anime.title}</h3>
+              </div>
+              {/* Dark overlay */}
             <div
               style={{
                 position: 'absolute',
@@ -117,11 +96,10 @@ const AnimeSlider = () => {
                 borderRadius: '10px',
               }}
             ></div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
-      
     </div>
   );
 };

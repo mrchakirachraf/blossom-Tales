@@ -34,10 +34,10 @@ const FavouritesAnimes = () => {
   }, [favorites]);
 
   return (
-    <div className="text-black0.5 ">
+    <div className="text-gray-600 ">
         <PinkLogo/>
         <div className="relative mb-4 lg:mb-10 mx-10 lg:mx-24">
-            <h1 className='hidden lg:block text-black0.5 text-center text-3xl font-bold mb-10'>My Favorites</h1>
+            <h1 className='hidden lg:block text-gray-600 text-center text-3xl font-bold mb-10'>My Favorites</h1>
             <div className={`relative lg:absolute lg:top-0 lg:right-0 justify-center`}>
                 <div className="flex justify-center">
                     <Link className={`${styles.FW_Buttons}`} to="/my-list-fav">
@@ -49,7 +49,7 @@ const FavouritesAnimes = () => {
                     <span>&nbsp;&nbsp;&nbsp;</span>
                     <Link className={`${styles.FW_Buttons}`} to="/my-watch-later">
                         <button className={`px-4 py-2 rounded-full
-                        bg-[#D9D9D9] text-black0.5`}>
+                        bg-[#D9D9D9] text-gray-600`}>
                             <i className="fas fa-clock"></i>
                         </button> 
                     </Link>

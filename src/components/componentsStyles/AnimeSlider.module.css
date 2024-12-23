@@ -1,0 +1,45 @@
+.animeSlide {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .animeImage {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Add zoom-in effect */
+  }
+  
+  .animeTitleOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+  }
+  
+  .animeTitleOverlay h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .animeSlide:hover .animeTitleOverlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .animeSlide:hover .animeImage {
+    transform: scale(1.05); /* Zoom-in effect */
+  }
+  

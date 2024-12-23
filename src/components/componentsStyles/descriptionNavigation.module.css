@@ -23,24 +23,7 @@
     
 }
 
-@media (max-width: 1400px) {
-    .buttonsGroupe {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.1rem; 
-        justify-content: center; 
-    }
+@media (max-width: 1024px) {
 
-    .buttonsGroupe a {
-        flex: 1 1 calc(20% - 0.1rem); 
-        text-align: center;
-    }
-
-    .buttonsGroupe a:nth-child(4),
-    .buttonsGroupe a:nth-child(5) {
-        flex: 1 1 calc(10%); 
-        margin-right: 0; 
-        margin-left: 0;  
-    }
 
     }

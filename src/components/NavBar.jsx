@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./componentsStyles/NavBar.module.css";
 import SearchBar from "./SearchBar";
-import { BsSearch, BsBook, BsPerson } from 'react-icons/bs';
+import { BsSearch, BsBook, BsPerson, BsCursor } from 'react-icons/bs';
 import { useNavigate, Link  } from "react-router-dom";
 
 
@@ -27,7 +27,7 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }) => {
         </div>
         <ul>
           <li>
-            <a>
+            <a style={{cursor:"pointer"}}>
               <div onClick={toggleSidebar} className={`${styles.SearchIcon}`}><BsSearch size={30} /></div>
               <div className={`${styles.SearchBar}`} ><SearchBar onSearch={handleSearch} /></div>
             </a>

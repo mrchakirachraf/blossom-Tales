@@ -24,37 +24,41 @@ const DescriptionNavigation = ({id}) => {
   }, []);
 
   return (
-    <div className={`mt-10 lg:mx-24 lg:mt-0 mb-10 flex flex-row flex-wrap justify-between items-center gap-8 ${styles.buttonsGroupe}`}>
-      <Link to={`/description-page/${id}`}>
-        <Button
-          class={`${activePage === "details" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
-          text="Details"
-        />
-      </Link>
-      <Link to={`/characters/${id}`}>
-        <Button
-          class={`${activePage === "characters" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
-          text="Characters"
-        />
-      </Link>
-      <Link to={`/staff-page/${id}`}>
-        <Button
-          class={`${activePage === "staff" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
-          text="Staff"
-        />
-      </Link>
-      <Link to={`/recommendations-page/${id}`}>
-        <Button
-          class={`${activePage === "recommendations" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
-          text="Recommendations"
-        />
-      </Link>
-      <Link to={`/more-info/${id}`}>
-        <Button
-          class={`${activePage === "more-info" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
-          text="More Infos"
-        />
-      </Link>
+    <div className={`mt-10 lg:mx-24 lg:mt-0 mb-10 flex flex-row flex-wrap justify-center items-center gap-8 ${styles.buttonsGroupe}`}>
+      <div className="w-full lg:w-auto flex flex-row flex-wrap justify-evenly items-center gap-8">
+        <Link to={`/description-page/${id}`}>
+          <Button
+            class={`${activePage === "details" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+            text="Details"
+          />
+        </Link>
+        <Link to={`/characters/${id}`}>
+          <Button
+            class={`${activePage === "characters" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+            text="Characters"
+          />
+        </Link>
+        <Link to={`/staff-page/${id}`}>
+          <Button
+            class={`${activePage === "staff" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+            text="Staff"
+          />
+        </Link>
+      </div>
+      <div className="w-full lg:w-auto flex flex-row flex-wrap justify-evenly items-center gap-8">
+        <Link to={`/recommendations-page/${id}`}>
+          <Button
+            class={`${activePage === "recommendations" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+            text="Recommendations"
+          />
+        </Link>
+        <Link to={`/more-info/${id}`}>
+          <Button
+            class={`${activePage === "more-info" ? "btn_pink" : "btn_gray"} w-40 lg:w-60`}
+            text="More Infos"
+          />
+        </Link>
+      </div>
     </div>
   );
 };

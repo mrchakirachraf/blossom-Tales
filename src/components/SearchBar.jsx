@@ -14,6 +14,12 @@ const SearchBar = ({ onSearch }) => {
         }
     };
 
+    const handleKeyDown = (e) => {
+        if (e.key === "Enter") {
+            handleSearch();
+        }
+    };
+
     return (
         <div className={styles.search_bar}>
             <input
@@ -22,6 +28,7 @@ const SearchBar = ({ onSearch }) => {
                 placeholder="Search by anime title..."
                 value={searchTerm}
                 onChange={handleInputChange}
+                onKeyDown={handleKeyDown}
             />
             <button className={styles.search_button} onClick={handleSearch}>
                 <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#E7B3C0">

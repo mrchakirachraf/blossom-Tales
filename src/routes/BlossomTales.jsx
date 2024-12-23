@@ -19,10 +19,7 @@ const BlossomTales = () => {
             <div className={styles.overlay}>
                 <div>
                     <div id={styles.logo}>
-                        <img
-                            src="https://see.fontimg.com/api/rf5/axo9R/NWY4ZDEwYzM0YjUxNDI1N2FjMjMzZWUzOWUxNDlhNmUudHRm/Qmxvc3NvbSBUYWxlcw/lucky-sunshine.png?r=fs&h=143&w=1000&fg=FFF7F7&bg=FFFFFF&tb=1&s=143"
-                            alt="Cursive fonts"
-                        />
+                        <img src="https://see.fontimg.com/api/rf5/axo9R/NWY4ZDEwYzM0YjUxNDI1N2FjMjMzZWUzOWUxNDlhNmUudHRm/Qmxvc3NvbSBUYWxlcw/lucky-sunshine.png?r=fs&h=148&w=1000&fg=FFFFFF&bg=0E0101&tb=1&s=148" alt="Cursive fonts"/>
                     </div>
                     <p className={styles.subtitle}>
                         Welcome to Blossom Tales 🌸 <br />

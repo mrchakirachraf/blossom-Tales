@@ -41,7 +41,7 @@ const Staff = () => {
     return (
         <div>
             <PinkLogo />
-            <h2 className=' text-black0.5 text-center text-3xl font-bold mb-10'>Staff</h2>
+            <h2 className=' text-gray-600 text-center text-3xl font-bold mb-10'>Staff</h2>
             <DescriptionNavigation id={id} />
             <AnimeStaffList id={id}/>
         </div>

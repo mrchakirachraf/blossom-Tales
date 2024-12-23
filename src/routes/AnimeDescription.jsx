@@ -47,7 +47,7 @@ const AnimeDescription = () => {
 
         
         <div className={`${styles.removeOnMobile} relative mb-10 justify-center mx-24`}>
-          <h2 className=' text-black0.5 text-center text-3xl font-bold'>{anime.title.toUpperCase()}</h2>
+          <h2 className=' text-gray-600 text-center text-3xl font-bold'>{anime.title.toUpperCase()}</h2>
           <div className={`absolute top-0 right-0 justify-center`}>
             <FavWatchLater id={anime.mal_id}/>
           </div>
@@ -56,7 +56,7 @@ const AnimeDescription = () => {
         <DescriptionNavigation id={id}/>
         
         <div className={`${styles.removeOnMobile} p-6 mb-10 mx-8 lg:mx-24 lg:flex flex-row justify-center items-center gap-10 text-justify`}>
-          <img src={anime.images.jpg.large_image_url} alt={anime.title} />
+          <img className="rounded-2xl" src={anime.images.jpg.large_image_url} alt={anime.title} />
           <div className='flex flex-col justify-evenly gap-8'>
             <h3 className='text-black0.5 text-2xl font-bold text-center'>Synopsis</h3>
             <div className='text-xl'>

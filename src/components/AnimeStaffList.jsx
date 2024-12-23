@@ -27,7 +27,7 @@ const AnimeStaffList = ({ id }) => {
     }
 
     if (!anime.length) {
-        return <p className="alertDanger w-10/12 text-center h-screen">Anime not found.</p>;
+        return <p className="alertDanger text-center ">Anime not found.</p>;
     }
 
     return (

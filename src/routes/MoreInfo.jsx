@@ -45,8 +45,8 @@ const MoreInfos = () => {
 
       {/* Titre et navigation */}
       <div className={`${styles.removeOnMobile} relative mb-10 justify-center mx-24`}>
-        <h2 className="text-black0.5 text-center text-3xl font-bold">
-          {anime.title.toUpperCase()}
+        <h2 className="text-gray-600 text-center text-3xl font-bold">
+            More Infos
         </h2>
       </div>
 
@@ -54,12 +54,11 @@ const MoreInfos = () => {
 
       {/* Section Desktop */}
       <div className={`p-6 mb-10 mx-8 lg:mx-24 lg:flex flex-row justify-center items-center gap-10 text-justify ${styles.removeOnMobile}`}>
-        <img
+        <img className="rounded-2xl"
           src={anime.images.jpg.large_image_url}
           alt={anime.title}
         />
         <div className="flex flex-col justify-evenly gap-8 ">
-          <h3 className="text-black0.5 text-2xl font-bold text-center ">More Infos</h3>
           <div className="text-xl">
             {anime.background ? (
               <p>{anime.background}</p>

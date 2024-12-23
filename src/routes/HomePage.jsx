@@ -38,7 +38,7 @@ const HomePage = () => {
             <div>
                 <AnimeSlider />
             </div>
-            <div className={`${styles.currentSeason} lg:ml-8 text-center lg:text-left mt-5`}>
+            <div className={`${styles.currentSeason} text-gray-600 lg:ml-8 text-center lg:text-left mt-5`}>
                 <h2>{currentSeason}</h2>
             </div>
             <div className="flex flex-col justify-center">

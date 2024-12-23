@@ -9,7 +9,7 @@ const ListeAnime = () => {
   return (
     <div>
       <PinkLogo />
-      <p className="mt-10 text-2xl text-center text-black0.5 font-bold mb-10">
+      <p className="mt-10 text-2xl text-center text-gray-600 font-bold mb-10">
         Every anime is a journey to a new world. Let your adventure begin here.
       </p>
       <Filter onLinkChange={setApiLink} />
