@@ -9,6 +9,11 @@ const SignIn = () => {
     class : "btn_purple w-32 lg:w-52",
     text: 'Sign In',
   };
+  let goBackProps = {
+    style : {},
+    class : "btn_purple w-32 lg:w-52",
+    text: 'Go Back',
+  };
 
   return (
   
@@ -28,9 +33,14 @@ const SignIn = () => {
                       <label htmlFor="exampleInputPassword1">Password</label>
                       <input name="mdp" type="password" id="exampleInputPassword1" placeholder="Enter your password ..." required></input>
                   </div>
-                  <Link to="/home-page">
-                    <Button {...signInBtnProps}></Button>
-                  </Link>
+                  <div className={`${styles.buttonsGroup}`}>
+                    <Link className='inline' to="/home-page">
+                      <Button {...signInBtnProps}></Button>
+                    </Link>
+                    <Link className='inline' to="/">
+                      <Button {...goBackProps}></Button>
+                    </Link>
+                  </div>
                   <span style={{textAlign : 'center'}} >if you don't have an account <u>click here</u></span>
               </form>
               
